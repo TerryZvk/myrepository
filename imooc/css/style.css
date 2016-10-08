@@ -1,0 +1,327 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+body{
+	font-family: "微软雅黑";
+	background:#fff;
+
+}
+.header{
+	position: relative;
+	z-index: 2;
+}
+.header:after{
+	content: '';
+	clear: both;
+	display: block;
+}
+.warp{
+	width: 1200px;
+	margin: 0 auto;
+    z-index: 12;
+	height:100%;
+	position: relative;
+}
+.header .logo{
+	width: 140px;
+	height: 60px;
+	margin-left: 20px;
+	margin-top:15px;
+	float: left;
+}
+.header .logo a{
+	display: block;
+	width: 140px;
+	height: 60px;
+}
+.header .logo a img{
+	width: 100%;
+}
+.nav {
+	margin-left: 200px;
+	margin-top: 25px;
+	float: left;
+}
+a{
+	text-decoration: none;
+	color: #07111b;
+}
+.nav a{
+	display: inline-block;
+	
+	padding:0 20px; 
+}
+.nav a:hover{
+	color: red;
+}
+.search{
+	float: right;
+	margin-top: 25px;
+	margin-right: 300px;
+	border-bottom: 1px solid #ccc;	
+}
+.search input{
+	outline: none;
+	border: none;
+	padding:6px 30px 6px 10px; 
+}
+.search .search-btn{
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+	background: url(../images/search.png) no-repeat 0px 4px;
+	background-size: 80%;
+	margin-bottom: -4px;
+}
+.sign {
+	float: right;
+	margin-right: 200px;
+	margin-top: 25px;
+}
+.sign a{
+	display: inline-block;
+	padding:0 15px; 
+	color:#333;
+	text-decoration: none;
+	font-size: 13px;
+}
+.bg{
+	width: 100%;
+	height: 490px;
+	position: absolute;
+	left: 0;
+	top: 0;
+	background: url(../images/bk.jpg) no-repeat 0 0;
+	background-size: cover;
+}
+
+.banner{
+	width: 1200px;
+	height: 460px;
+	overflow: hidden;
+	margin: 0 auto;
+	position: relative;
+}
+.main .banner #slider{
+	position: absolute;
+	width: 1200px;
+	height: 460px;
+	padding-bottom: 0 !important;
+}
+.pogoSlider-nav-btn{
+	width: 10px;
+	height: 10px;
+}
+.pogoSlider-dir-btn--prev{
+	left: 250px !important;
+}
+.menu{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 244px;
+	height: 460px;
+	z-index: 2;
+	background: rgba(0,0,0,0.2);
+
+}
+.menu a{
+	color: #fff;
+	text-decoration: none;
+}
+.menu .item{
+	height: 64px;
+	line-height: 66px;
+	cursor: pointer;
+	padding: 0 24px;
+	position: relative;
+}
+.menu .item:hover{
+	background: rgba(0,0,0,0.3);
+}
+.menu .item a{
+    display: block;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 0 8px;
+    height: 63px;
+    position: relative;
+}
+.menu .item .icon{
+	position: absolute;
+	width: 16px;
+	height: 16px;
+	background: url(../images/right.png) no-repeat 0 0;
+	right: 10px;
+	top:27px;
+}
+.menu .item:last-child a{
+	border-bottom: none;
+}
+.submenu{
+	position: absolute;
+	left: 244px;
+	top: 0px;
+	width: 730px;
+	height: 460px;
+	z-index: 1000;
+
+}
+.hide{
+	display: none;
+}
+.submenu .innerbox{
+	width: 730px;
+	height: 460px;
+	
+}
+.submenu .innerbox title a:hover{
+	color: #f00 !important;
+}
+.submenu .innerbox .title{
+	padding: 30px 0 0 30px;
+	line-height: 30px;
+}
+.submenu .innerbox .title h4{
+	font-weight: 400;
+	color: red;
+	padding-bottom: 10px;
+}
+.submenu .innerbox .title span{
+	font-weight: bold;
+	font-size: 13px;
+
+}
+.submenu .innerbox .title a{
+	color: #000;
+	text-decoration: none;
+	font-size: 13px;
+}
+.recommend{
+	margin-top: 22px;
+	
+}
+.recommend .recommend-head:after{
+   content: '';
+   clear: both;
+   display: block;
+}
+.recommend .recommend-head .course{
+	float: left;
+}
+.recommend .recommend-head .more{
+	float: right;
+}
+.more a{
+	text-decoration: none;
+	color: #000;
+}
+.more a:hover{
+	color: #666;
+}
+.course-card{
+	padding: 10px 0;
+}
+.container{
+	margin-right: 16px;
+  display: inline-block;
+  font-family:"微软雅黑";
+  font-size:14px;
+  width:220px;
+  overflow:hidden;
+  position:relative;
+  height:157px;
+  border-radius:5px;
+  box-shadow: 1px 1px 7px #bcbcbc; 
+  cursor: pointer;
+}
+.container:hover{
+	box-shadow: 1px 4px 7px #bcbcbc; 
+}
+.container img{
+  width:100%;
+}
+.card{
+  text-align:center;
+  width:100%;
+  position:absolute;
+  left:0;
+  bottom:0;
+  z-index:2;
+  background: #fff;
+  transform:translateY(60px);
+  transition: all 0.3s ease-out;
+}
+.card h4{
+	font-weight: 400;
+	padding: 10px 0;
+}
+.card p{
+	font-size: 13px;
+	color: #999;
+}
+.container:hover .card{
+	 transform:translateY(-4px);
+}
+.footer{
+  z-index:22;
+  padding: 5px 0;
+}
+.footer:after{
+  content: '';
+  display: block;
+  clear: both;
+}
+ .footer .left{
+  float:left;
+  padding-left: 5px;
+  color: #f00;
+}
+ .footer .right{
+  float:right;
+  padding-right: 5px;
+  color:#ccc;
+}
+.wrapper{
+	position: relative;
+	overflow: hidden;
+}
+.wrap-content{
+	margin-top:20px;
+	padding-top: 20px;
+	background: #f3f5f7 
+}
+.wrap-content .warp .web{
+	position: relative;
+	background: url(../images/Web.png) no-repeat;
+	width: 224px;
+	height: 364px;
+	border-radius: 3px;
+}
+.wrap-content .warp .web .web-title{
+	padding: 22px 0 10px 20px;
+}
+.wrap-content .warp .web .web-title h1{
+	padding-bottom: 18px;
+	color: #fff;
+}
+.wrap-content .warp .web .web-title p{
+	font-size: 13px;
+	padding-top: 10px;
+}
+.wrap-content .warp .web .web-title p a{
+	color: #fff;
+}
+.wrap-content .warp .web .web-course{
+	padding-left: 20px;
+	padding-top:120px;
+	font-size: 13px;
+	line-height: 25px;
+	
+}
+.wrap-content .warp .web .web-course p a{
+	color: #f44;
+}
+.wrap-content .warp .web .web-course p a:hover{
+	color: #f00;
+}
