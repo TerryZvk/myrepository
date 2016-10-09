@@ -173,7 +173,7 @@ a{
 .submenu .innerbox{
 	width: 730px;
 	height: 460px;
-	
+	overflow: hidden;
 }
 .submenu .innerbox title a:hover{
 	color: #f00 !important;
