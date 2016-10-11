@@ -12,7 +12,6 @@
 </head>
 <body>
 	<div class="header">
-		
 		<div class="logo">
 			<a href="#"><img src="images/logo.png" alt="logo"></a>
 		</div>
@@ -24,8 +23,8 @@
 		</div>
 		<div class="sign">
 			<a href="#"></a>
-			<a href="#">登录</a>
-			<a href="#">注册</a>
+			<a href="#" id="sign-in">登录</a>
+			<a href="#" id="sign-up">注册</a>
 		</div>
 		<div class="search">
 			<input type="text" placeholder="请输入想搜索的内容..." maxlength="30">
@@ -33,7 +32,61 @@
 		</div>
 	</div>
 	<div class="bg"></div>
+	<div class="bgshadow hidden"></div>
+	<div class="loggin hidden">
+		<div class="logginbox">
+			<div class="logginbox-header">
+				<a href="#" class="active" id="signin">登录</a>
+				<a href="#"  id="signup">注册</a>
+				<span class="close"></span>
+			</div>
+			<div class="signin">
+				<form>
+					<div class="form-group">
+						<input type="text" name="email" id="email" maxlength="30" placeholder="请输入登录邮箱/手机号" />
+						<p>请输入正确的邮箱或手机号</p>
+					</div>
+					<div class="form-group">
+						<input type="password" name="password" id="password" maxlength="16" placeholder="6-16位密码，区分大小写，不能用空格" />
+						<p>请输入6-16位密码，区分大小写，不能使用空格！</p>
+					</div>
+					<div class="form-group">
+						<span><input type="checkbox" checked /></span><label>下次自动登录</label>
+						<a href="#">忘记密码</a>
+					</div>
+					<div class="form-group">
+						<button class="red-btn">登录</button>
+					</div>
+				</form>
+			</div>
+			<div class="signup hidden">
+				<form>
+					<div class="form-group">
+					  <input type="text" id="email" name="email" maxlength="30" placeholder="请输入邮箱/手机号">
+					  <p>请输入正确的邮箱或手机号</p>
+					</div>
+					<div class="form-group clearfix">
+					<div class="verify">
+					 <input type="text" maxlength="4" >
+					 <p>验证码错误</p>
+					 </div>
+					  <a href="#"><img src="images/verifycode.png"></a>
+					  <a href="#" class="refresh"><i class="iconfont">&#xe620;</i></a>
+					</div>
 
+					<div class="form-group">
+						<button class="red-btn">注册</button>
+					</div>
+				</form>
+			</div>
+			<div class="other">
+				<span>其他方式登录</span>
+				<a href="#" class="weibo"></a>
+				<a href="#" class="weixin"></a>
+				<a href="#" class="qq"></a>
+			</div>
+		</div>
+	</div>
 	<div class="banner">
 			<div id="slider">
 				<img src="images/banner1.jpg" class="pogoSlider-slide" alt="banner1">
@@ -301,7 +354,8 @@
 
 	<div class="wrap-content">
 		<div class="warp">
-			<div class="web">
+		  <div class="web">
+			  <div class="fed">
 				<div class="web-title">
 				  <h1>Web<br>前端工程师</h1>
 				  <p><a href="#">职业路径</a></p>
@@ -311,8 +365,382 @@
 				    <p><a href="#">高德开发者必由之路——JS API篇</a></p>
 				    <p><a href="#">教你HTML5开发爱心鱼游戏</a></p>
 			    </div>
-			</div>
-		</div>
-	</div>
+			  </div>  
+			  <div class="mid">
+				  <a href="#"><div class="webapp">
+				  	<h3>HTML移动Web App阅读器</h3>
+				  </div></a>
+				  <a href="#"><div class="jquery">
+				  	<h3>框架：jQuery源码探索之旅</h3>
+				  </div></a>
+			  </div>
+			  <div class="rightside">
+			  		<div class="free-course">
+			  		   <div class="container">
+	                     <div class="wrapper">
+                         <img src="images/course2.jpg" alt="">
+                	   <div class="card">
+                	  <h4> HTML+CSS基础课程</h4>
+                	  <p>忘记设备尺寸，一套代码适配多终端，响应式开发让用户体验和开发效率完美结合</p>
+                       </div> 
+                      </div>
+		                 <div class="footer">
+		                      <span class="right">1415人在学</span>
+		                 </div>
+		              </div>
+
+		                <div class="container" style="margin-top: 14px;">
+	                     <div class="wrapper">
+                         <img src="images/course2.jpg" alt="">
+                	      <div class="card">
+                	      <h4> HTML+CSS基础课程</h4>
+                	     <p>忘记设备尺寸，一套代码适配多终端，响应式开发让用户体验和开发效率完美结合</p>
+                          </div> 
+                          </div>
+		                 <div class="footer">
+		                      <span class="right">1415人在学</span>
+		                 </div>
+		                </div>
+			  		</div>
+			  		<div class="course-list">
+			  			 <div class="course-list-container">
+	                       <div class="wrapper">
+                             <img src="images/course2.jpg" alt="">
+                	       <div class="card">
+                	         <h4> HTML+CSS基础课程</h4>
+                	             <p>忘记设备尺寸，一套代码适配多终端，响应式开发让用户体验和开发效率完美结合</p>
+                           </div> 
+                           </div>
+		                 <div class="footer">
+		                      <span class="right">1415人在学</span>
+		                 </div>
+		              </div>
+						  <ul>
+						  	<li><a href="#">H5+JS+CSS3实现七夕言情</a></li>
+						  	<li><a href="#">JavaScript正则表达式</a></li>
+						  	<li><a href="#">瀑布流布局</a></li>
+						  	<li><a href="#">用less写个新浪微博</a></li>
+						  	<li><a href="#">Canvas玩儿转红包照片</a></li>
+						  </ul>
+					 
+			  		</div>
+			  	</div>	
+			  </div>
+
+			<div class="web">
+			  <div class="fed" style="background:url(images/java.png) no-repeat">
+				<div class="web-title">
+				  <h1>JAVA<br>工程师</h1>
+				  <p><a href="#">职业路径</a></p>
+			    </div>
+				<div class="web-course">
+					<p><a href="#">jQuery源码探索之旅</a></p>
+				    <p><a href="#">高德开发者必由之路——JS API篇</a></p>
+				    <p><a href="#">教你HTML5开发爱心鱼游戏</a></p>
+			    </div>
+			  </div>  
+			  <div class="mid">
+				  <a href="#"><div class="webapp">
+				  	<h3>HTML移动Web App阅读器</h3>
+				  </div></a>
+				  <a href="#"><div class="jquery">
+				  	<h3>框架：jQuery源码探索之旅</h3>
+				  </div></a>
+			  </div>
+			  <div class="rightside">
+			  		<div class="free-course">
+			  		   <div class="container">
+	                     <div class="wrapper">
+                         <img src="images/course2.jpg" alt="">
+                	   <div class="card">
+                	  <h4> HTML+CSS基础课程</h4>
+                	  <p>忘记设备尺寸，一套代码适配多终端，响应式开发让用户体验和开发效率完美结合</p>
+                       </div> 
+                      </div>
+		                 <div class="footer">
+		                      <span class="right">1415人在学</span>
+		                 </div>
+		              </div>
+
+		                <div class="container" style="margin-top: 14px;">
+	                     <div class="wrapper">
+                         <img src="images/course2.jpg" alt="">
+                	      <div class="card">
+                	      <h4> HTML+CSS基础课程</h4>
+                	     <p>忘记设备尺寸，一套代码适配多终端，响应式开发让用户体验和开发效率完美结合</p>
+                          </div> 
+                          </div>
+		                 <div class="footer">
+		                      <span class="right">1415人在学</span>
+		                 </div>
+		                </div>
+			  		</div>
+			  		<div class="course-list">
+			  			 <div class="course-list-container">
+	                       <div class="wrapper">
+                             <img src="images/course2.jpg" alt="">
+                	       <div class="card">
+                	         <h4> HTML+CSS基础课程</h4>
+                	             <p>忘记设备尺寸，一套代码适配多终端，响应式开发让用户体验和开发效率完美结合</p>
+                           </div> 
+                           </div>
+		                 <div class="footer">
+		                      <span class="right">1415人在学</span>
+		                 </div>
+		              </div>
+						  <ul>
+						  	<li><a href="#">H5+JS+CSS3实现七夕言情</a></li>
+						  	<li><a href="#">JavaScript正则表达式</a></li>
+						  	<li><a href="#">瀑布流布局</a></li>
+						  	<li><a href="#">用less写个新浪微博</a></li>
+						  	<li><a href="#">Canvas玩儿转红包照片</a></li>
+						  </ul>
+					 
+			  		</div>
+			     </div>	
+		      </div>
+
+		      <div class="web">
+			  <div class="fed" style="background:url(images/php.png) no-repeat">
+				<div class="web-title">
+				  <h1>PHP<br>工程师</h1>
+				  <p><a href="#">职业路径</a></p>
+			    </div>
+				<div class="web-course">
+					<p><a href="#">jQuery源码探索之旅</a></p>
+				    <p><a href="#">高德开发者必由之路——JS API篇</a></p>
+				    <p><a href="#">教你HTML5开发爱心鱼游戏</a></p>
+			    </div>
+			  </div>  
+			  <div class="mid">
+				  <a href="#"><div class="webapp">
+				  	<h3>HTML移动Web App阅读器</h3>
+				  </div></a>
+				  <a href="#"><div class="jquery">
+				  	<h3>框架：jQuery源码探索之旅</h3>
+				  </div></a>
+			  </div>
+			  <div class="rightside">
+			  		<div class="free-course">
+			  		   <div class="container">
+	                     <div class="wrapper">
+                         <img src="images/course2.jpg" alt="">
+                	   <div class="card">
+                	  <h4> HTML+CSS基础课程</h4>
+                	  <p>忘记设备尺寸，一套代码适配多终端，响应式开发让用户体验和开发效率完美结合</p>
+                       </div> 
+                      </div>
+		                 <div class="footer">
+		                      <span class="right">1415人在学</span>
+		                 </div>
+		              </div>
+
+		                <div class="container" style="margin-top: 14px;">
+	                     <div class="wrapper">
+                         <img src="images/course2.jpg" alt="">
+                	      <div class="card">
+                	      <h4> HTML+CSS基础课程</h4>
+                	     <p>忘记设备尺寸，一套代码适配多终端，响应式开发让用户体验和开发效率完美结合</p>
+                          </div> 
+                          </div>
+		                 <div class="footer">
+		                      <span class="right">1415人在学</span>
+		                 </div>
+		                </div>
+			  		</div>
+			  		<div class="course-list">
+			  			 <div class="course-list-container">
+	                       <div class="wrapper">
+                             <img src="images/course2.jpg" alt="">
+                	       <div class="card">
+                	         <h4> HTML+CSS基础课程</h4>
+                	             <p>忘记设备尺寸，一套代码适配多终端，响应式开发让用户体验和开发效率完美结合</p>
+                           </div> 
+                           </div>
+		                 <div class="footer">
+		                      <span class="right">1415人在学</span>
+		                 </div>
+		              </div>
+						  <ul>
+						  	<li><a href="#">H5+JS+CSS3实现七夕言情</a></li>
+						  	<li><a href="#">JavaScript正则表达式</a></li>
+						  	<li><a href="#">瀑布流布局</a></li>
+						  	<li><a href="#">用less写个新浪微博</a></li>
+						  	<li><a href="#">Canvas玩儿转红包照片</a></li>
+						  </ul>
+					 
+			  		</div>
+			     </div>	
+		      </div>
+
+		      <div class="web">
+			  <div class="fed" style="background:url(images/Android.png) no-repeat">
+				<div class="web-title">
+				  <h1>Android<br>工程师</h1>
+				  <p><a href="#">职业路径</a></p>
+			    </div>
+				<div class="web-course">
+					<p><a href="#">jQuery源码探索之旅</a></p>
+				    <p><a href="#">高德开发者必由之路——JS API篇</a></p>
+				    <p><a href="#">教你HTML5开发爱心鱼游戏</a></p>
+			    </div>
+			  </div>  
+			  <div class="mid">
+				  <a href="#"><div class="webapp">
+				  	<h3>HTML移动Web App阅读器</h3>
+				  </div></a>
+				  <a href="#"><div class="jquery">
+				  	<h3>框架：jQuery源码探索之旅</h3>
+				  </div></a>
+			  </div>
+			  <div class="rightside">
+			  		<div class="free-course">
+			  		   <div class="container">
+	                     <div class="wrapper">
+                         <img src="images/course2.jpg" alt="">
+                	   <div class="card">
+                	  <h4> HTML+CSS基础课程</h4>
+                	  <p>忘记设备尺寸，一套代码适配多终端，响应式开发让用户体验和开发效率完美结合</p>
+                       </div> 
+                      </div>
+		                 <div class="footer">
+		                      <span class="right">1415人在学</span>
+		                 </div>
+		              </div>
+
+		                <div class="container" style="margin-top: 14px;">
+	                     <div class="wrapper">
+                         <img src="images/course2.jpg" alt="">
+                	      <div class="card">
+                	      <h4> HTML+CSS基础课程</h4>
+                	     <p>忘记设备尺寸，一套代码适配多终端，响应式开发让用户体验和开发效率完美结合</p>
+                          </div> 
+                          </div>
+		                 <div class="footer">
+		                      <span class="right">1415人在学</span>
+		                 </div>
+		                </div>
+			  		</div>
+			  		<div class="course-list">
+			  			 <div class="course-list-container">
+	                       <div class="wrapper">
+                             <img src="images/course2.jpg" alt="">
+                	       <div class="card">
+                	         <h4> HTML+CSS基础课程</h4>
+                	             <p>忘记设备尺寸，一套代码适配多终端，响应式开发让用户体验和开发效率完美结合</p>
+                           </div> 
+                           </div>
+		                 <div class="footer">
+		                      <span class="right">1415人在学</span>
+		                 </div>
+		              </div>
+						  <ul>
+						  	<li><a href="#">H5+JS+CSS3实现七夕言情</a></li>
+						  	<li><a href="#">JavaScript正则表达式</a></li>
+						  	<li><a href="#">瀑布流布局</a></li>
+						  	<li><a href="#">用less写个新浪微博</a></li>
+						  	<li><a href="#">Canvas玩儿转红包照片</a></li>
+						  </ul>
+					 
+			  		</div>
+			     </div>	
+		      </div>
+
+		      <div class="web">
+			  <div class="fed" style="background:url(images/iOS.png) no-repeat">
+				<div class="web-title">
+				  <h1>iOS<br>工程师</h1>
+				  <p><a href="#">职业路径</a></p>
+			    </div>
+				<div class="web-course">
+					<p><a href="#">jQuery源码探索之旅</a></p>
+				    <p><a href="#">高德开发者必由之路——JS API篇</a></p>
+				    <p><a href="#">教你HTML5开发爱心鱼游戏</a></p>
+			    </div>
+			  </div>  
+			  <div class="mid">
+				  <a href="#"><div class="webapp">
+				  	<h3>HTML移动Web App阅读器</h3>
+				  </div></a>
+				  <a href="#"><div class="jquery">
+				  	<h3>框架：jQuery源码探索之旅</h3>
+				  </div></a>
+			  </div>
+			  <div class="rightside">
+			  		<div class="free-course">
+			  		   <div class="container">
+	                     <div class="wrapper">
+                         <img src="images/course2.jpg" alt="">
+                	   <div class="card">
+                	  <h4> HTML+CSS基础课程</h4>
+                	  <p>忘记设备尺寸，一套代码适配多终端，响应式开发让用户体验和开发效率完美结合</p>
+                       </div> 
+                      </div>
+		                 <div class="footer">
+		                      <span class="right">1415人在学</span>
+		                 </div>
+		              </div>
+
+		                <div class="container" style="margin-top: 14px;">
+	                     <div class="wrapper">
+                         <img src="images/course2.jpg" alt="">
+                	      <div class="card">
+                	      <h4> HTML+CSS基础课程</h4>
+                	     <p>忘记设备尺寸，一套代码适配多终端，响应式开发让用户体验和开发效率完美结合</p>
+                          </div> 
+                          </div>
+		                 <div class="footer">
+		                      <span class="right">1415人在学</span>
+		                 </div>
+		                </div>
+			  		</div>
+			  		<div class="course-list">
+			  			 <div class="course-list-container">
+	                       <div class="wrapper">
+                             <img src="images/course2.jpg" alt="">
+                	       <div class="card">
+                	         <h4> HTML+CSS基础课程</h4>
+                	             <p>忘记设备尺寸，一套代码适配多终端，响应式开发让用户体验和开发效率完美结合</p>
+                           </div> 
+                           </div>
+		                 <div class="footer">
+		                      <span class="right">1415人在学</span>
+		                 </div>
+		              </div>
+						  <ul>
+						  	<li><a href="#">H5+JS+CSS3实现七夕言情</a></li>
+						  	<li><a href="#">JavaScript正则表达式</a></li>
+						  	<li><a href="#">瀑布流布局</a></li>
+						  	<li><a href="#">用less写个新浪微博</a></li>
+						  	<li><a href="#">Canvas玩儿转红包照片</a></li>
+						  </ul>
+					 
+			  		</div>
+			     </div>	
+		      </div>
+	      </div>
+	  </div>
+	  <div class="footer">
+	  		<div class="warp">
+	  		<div class="pic">
+	  			<a href="#" target="_blank" title="新浪微博" class="weibo"></a>
+	  			<a href="#" target="_blank" title="微信" class="weixin"><span></span></a>
+	  			<a href="#" target="_blank" title="腾讯微博" class="tengxun"></a>
+	  			<a href="#" target="_blank" title="QQ空间" class="qq"></a>
+	  		</div>	
+	  			<ul>
+	  				<li><a href="#">关于我们</a></li>
+	  				<li><a href="#">企业合作</a></li>
+	  				<li><a href="#">人才招聘</a></li>
+					<li><a href="#">讲师招募</a></li>
+					<li><a href="#">联系我们</a></li>
+					<li><a href="#">意见反馈</a></li>
+					<li><a href="#">友情链接</a></li>	
+	  			</ul>
+	  			<div class="footer-info">
+	  				<p><small>© 2016 imooc.com  京ICP备13046642号</small></p>
+	  			</div>
+	  		</div>
+	  </div>
 </body>
 </html>
