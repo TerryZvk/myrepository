@@ -52,13 +52,13 @@ a{
 	
 	padding:0 20px; 
 }
-.nav a:hover{
+.header a:hover{
 	color: red;
 }
 .search{
 	float: right;
 	margin-top: 25px;
-	margin-right: 300px;
+	margin-right: 0px;
 	border-bottom: 1px solid #ccc;	
 }
 .search input{
@@ -84,7 +84,7 @@ a{
 	padding:0 15px; 
 	color:#333;
 	text-decoration: none;
-	font-size: 13px;
+	font-size: 14px;
 }
 .bg{
 	width: 100%;
@@ -223,17 +223,18 @@ a{
 	padding: 10px 0;
 }
 .container{
-	margin-right: 16px;
+  margin-right: 16px;
   display: inline-block;
   font-family:"微软雅黑";
   font-size:14px;
   width:220px;
   overflow:hidden;
   position:relative;
-  height:157px;
+  height:172px;
   border-radius:5px;
   box-shadow: 1px 1px 7px #bcbcbc; 
   cursor: pointer;
+ 
 }
 .container:hover{
 	box-shadow: 1px 4px 7px #bcbcbc; 
@@ -249,7 +250,7 @@ a{
   bottom:0;
   z-index:2;
   background: #fff;
-  transform:translateY(60px);
+   transform:translateY(60px);
   transition: all 0.3s ease-out;
 }
 .card h4{
@@ -261,11 +262,11 @@ a{
 	color: #999;
 }
 .container:hover .card{
-	 transform:translateY(-4px);
+	transform:translateY(0);
 }
 .footer{
   z-index:22;
-  padding: 5px 0;
+  padding: 10px 0;
 }
 .footer:after{
   content: '';
@@ -291,37 +292,419 @@ a{
 	padding-top: 20px;
 	background: #f3f5f7 
 }
-.wrap-content .warp .web{
+.wrap-content .warp .web .fed{
 	position: relative;
 	background: url(../images/Web.png) no-repeat;
-	width: 224px;
 	height: 364px;
-	border-radius: 3px;
+	border-radius: 5px;
+	width: 224px;
+	padding-right: 15px;
+	float: left;
 }
-.wrap-content .warp .web .web-title{
+.wrap-content .warp .web{
+	height: 364px;
+	padding: 20px 0;
+}
+.wrap-content .warp .web:after{
+	content: '';
+	clear: both;
+	display: block;
+}
+ .web .fed .web-title{
 	padding: 22px 0 10px 20px;
 }
-.wrap-content .warp .web .web-title h1{
+ .web .fed .web-title h1{
 	padding-bottom: 18px;
 	color: #fff;
 }
-.wrap-content .warp .web .web-title p{
+.web .fed .web-title p{
 	font-size: 13px;
 	padding-top: 10px;
 }
-.wrap-content .warp .web .web-title p a{
+ .web .web-title p a{
 	color: #fff;
 }
 .wrap-content .warp .web .web-course{
 	padding-left: 20px;
 	padding-top:120px;
 	font-size: 13px;
-	line-height: 25px;
-	
+	line-height: 25px;	
 }
 .wrap-content .warp .web .web-course p a{
 	color: #f44;
 }
 .wrap-content .warp .web .web-course p a:hover{
 	color: #f00;
+}
+.wrap-content .warp .web .mid{
+	float: left;
+	margin-left:0;
+	margin-top: 0;
+	width: 468px;
+	height: 364px;
+	padding-right: 20px;
+}
+.wrap-content .warp .web .mid .webapp{
+	width: 468px;
+	height: 172px;
+	background: url(../images/webapp.jpg) no-repeat; 
+	border-radius: 5px;
+	color: #fff;
+	position: relative;
+	box-shadow: 1px 2px 4px #bcbcbc;
+	transition: all 0.3s ease-out;
+}
+.mid .webapp h3,.mid .jquery h3{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 250px;
+	transform: translate(-50%,-50%);
+}
+.mid a{
+	display: block;
+}
+.wrap-content .warp .web .webapp:hover{
+	box-shadow: 1px 7px 10px 2px #bcbcbc;
+}
+.web .mid .jquery{
+	width: 468px;
+	height: 172px;
+	background: url(../images/jquery.jpg) no-repeat; 
+	border-radius: 5px;
+	color: #fff;
+	margin-top: 20px;
+	position: relative;
+	box-shadow: 1px 2px 4px #bcbcbc;
+	transition: all 0.3s ease-out;
+}
+.web .mid .jquery:hover{
+	box-shadow: 1px 7px 10px 2px #bcbcbc;
+}
+.rightside{
+	float: left;
+}
+.rightside .free-course{
+	width: 220px;
+	padding-right:16px; 
+}
+.rightside .free-course{
+	float: left;
+}
+.course-list{
+	display: inline-block;
+	background: #fff;
+	height:360px;
+	width: 220px;
+	box-shadow: 1px 2px 4px #bcbcbc;
+	cursor: pointer;
+	transition: all 0.3s ease-out;
+}
+.course-list:hover{
+	box-shadow: 1px 7px 10px 2px #bcbcbc;
+}
+.course-list-container{
+	width: 220px;
+	transition: all 0.3s ease-out;
+}
+.course-list-container:hover .card{
+	 transform:translateY(0px);
+
+}
+.course-list ul{
+	margin: 25px;
+	padding-top: 10px;
+	font-size: 13px;
+	border-top: 1px solid #ccc;
+}
+.course-list ul li{
+	padding:5px 0; 
+}
+.footer .warp .pic{
+	padding: 20px 0;
+	text-align: center;
+}
+.footer .warp .pic a{
+	display: inline-block;
+	margin: 0 10px;
+	width: 32px;
+	height: 32px;
+	background: url(../images/idx-btm.png) no-repeat;
+}
+.footer .warp .pic a.weibo{
+	background-position:0 -221px; 
+}
+.footer .warp .pic a.weibo:hover{
+	background-position:0 -262px; 
+}
+.footer .warp .pic a.weixin{
+	background-position:-52px -221px;
+	position: relative; 
+}
+.footer .warp .pic a.weixin span{
+	position: absolute;
+	display: block;
+	left: -67px;
+	top: -211px;
+	width: 167px;
+	height: 216px;
+	background: url(../images/idx-btm.png) no-repeat -4px 0px;
+	z-index: 10;
+	visibility: hidden;
+	opacity: 0;
+}
+.footer .warp .pic a.weixin:hover{
+	background-position:-52px -262px; 
+}
+.footer .warp .pic .weixin:hover.weixin span{
+	opacity: 1;
+	visibility: visible;
+}
+.footer .warp .pic a.tengxun{
+	background-position:-104px -221px; 
+}
+.footer .warp .pic a.tengxun:hover{
+	background-position:-104px -262px; 
+}
+.footer .warp .pic a.qq{
+	background-position:-156px -221px; 
+}
+.footer .warp .pic a.qq:hover{
+	background-position:-156px -262px; 
+}
+.footer .warp ul{
+	padding-bottom: 30px;
+	list-style: none;
+	text-align: center;
+
+}
+.footer .warp ul li{
+	display: inline-block;
+	padding: 0 13px;
+}
+.footer .warp ul li a{
+	color: #999;
+	font-size: 13px;
+}
+.footer .warp .footer-info{
+	text-align: center;
+	padding: 15px 0;
+	color: #999;
+	border-top: 1px solid #E0CDCD;
+}
+.bgshadow{
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.5);
+	z-index: 10000;
+}
+.loggin{
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	width: 376px;
+	height: 365px;
+	background: #fff;
+	z-index: 10001;
+}
+.loggin .logginbox{
+	margin: 10px 15px 15px 15px;
+
+}
+.loggin .logginbox .logginbox-header{
+	border-bottom: 1px solid #D6D3D3;
+	height: 40px;
+	font-size: 0px;
+	position: relative;
+}
+.loggin .logginbox .logginbox-header a{
+	display: inline-block;
+	width: 68px;
+	text-align: center;
+	font-size: 18px;
+	line-height: 40px;
+}
+.loggin .logginbox .logginbox-header a:hover{
+	color: #f00;
+	border-bottom: 1px solid #f00;
+}
+.loggin .logginbox .logginbox-header .close{
+	display: block;
+	position: absolute;
+	right:0px;
+	bottom: 10px;
+	width: 15px;
+	height: 15px;
+	background: url(../images/login.png) no-repeat 0px 0px;
+	cursor: pointer;
+}
+.loggin .logginbox .logginbox-header .close:hover{
+	background: url(../images/login.png) no-repeat 0px -21px;
+}
+.active{
+	border-bottom: 1px solid #f00;
+	color: #f00;
+}
+.show{
+	display: block;
+}
+.hidden{
+	display: none;
+}
+.loggin .logginbox .signin{
+	padding:10px; 
+}
+form{
+	margin-top: 14px;
+}
+.form-group{
+	width: 100%;
+	padding: 5px 0;
+	position: relative;
+}
+.showwarning{
+	visibility: visible;
+	opacity: 1;
+}
+.form-group p{
+	visibility: hidden;
+	opacity: 0;
+	font-size: 13px;
+	color: #f00;
+}
+ .form-group input{
+	width: 100%;
+	height: 38px;
+	outline: none;
+	text-indent: 8px;
+	border: 1px solid #E4DADA;
+}
+.signin .form-group input:focus{
+	border: 1px solid #4E4B4B;
+}
+
+.signin .form-group label{
+	color: #999;
+	margin-left: 23px;
+	font-size: 14px;
+}
+.signin .form-group span{
+	display: inline-block;
+	position: absolute;
+	left: 2px;
+	top: 8px;
+}
+.signin .form-group span input{
+	width: 16px;
+	height: 16px;
+}
+.signin .form-group a{
+	margin-left: 155px;
+	color: #999;
+	font-size: 14px;
+}
+.signin .form-group a:hover{
+	color: #f00;
+}
+ .form-group .red-btn{
+	width: 100%;
+	background: #f01400;
+	border: none;
+	text-align: center;
+	color: #fff;
+	font-size: 18px;
+	cursor: pointer;
+	padding: 14px 0;
+}
+ .form-group .red-btn:hover{
+	background: #EF6E63;
+}
+.loggin .logginbox .other{
+	padding-left: 116px;
+	position: relative;
+}
+.loggin .logginbox .other span{
+	color: #999;
+	font-size: 14px;
+	position: absolute;
+	left: 8px;
+	top: 6px;
+}
+.loggin .logginbox .other a{
+	display: inline-block;
+	width: 32px;
+	height: 32px;
+	padding: 0 10px;
+	background: url(../images/idx-btm.png) no-repeat;
+}
+.loggin .logginbox .other a.weibo{
+	background-position: 0 -262px;
+}
+.loggin .logginbox .other a.weixin{
+	background-position: -43px -262px;
+}
+.loggin .logginbox .other a.qq{
+	background-position: -92px -262px;
+}
+.loggin .logginbox .signup{
+	padding: 10px;
+}
+.loggin .logginbox .signup .form-group input:focus{
+	border: 1px solid #4E4B4B;
+}
+.loggin .logginbox .signup .form-group .verify{
+	width: 90px;
+	float: left;
+	height: 60px;
+}
+.loggin .logginbox .signup .form-group a{
+	width: 70px;
+	height: 40px;
+	margin-left: 20px;
+	float: left;
+}
+.loggin .logginbox .signup .form-group a img{
+	width: 70px;
+	height: 40px;
+}
+.loggin .logginbox .signup .form-group .refresh{
+	padding: 8px 0;
+	
+}
+.signup .form-group .refresh i{
+	display: inline-block;
+	width: 20px;
+	height: 21;
+	transition: all 0.3s ease-out;
+	transform: rotate(0);
+}
+ .signup .form-group .refresh i:hover{
+	transform: rotate(360deg);
+}
+@font-face {font-family: 'iconfont';
+    src: url('../font/iconfont.eot'); /* IE9*/
+    src: url('../font/iconfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../font/iconfont.woff') format('woff'), /* chrome、firefox */
+    url('../font/iconfont.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    url('../font/iconfont.svg#iconfont') format('svg'); /* iOS 4.1- */
+}
+.clearfix:after{
+	clear: both;
+	height: 0;
+	display: block;
+	content: '';
+	visibility:hidden;
+
+}
+.iconfont{
+    font-family:"iconfont" !important;
+    font-size:20px;font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+
 }
